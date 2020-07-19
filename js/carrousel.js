@@ -20,7 +20,7 @@ const flkty = new Flickity('.categorias__carrousel', {
 const flkty2 = new Flickity('.mais-vendidos__carrousel', {
         // options
         pageDots: false,
-        resize: true,
+        resize: false,
         contain: true,
 
 });

@@ -309,6 +309,11 @@ html {
   color: #fff;
   text-decoration: none;
 }
+@media screen and (max-width: 768px) {
+  .botao-frete-gratis {
+    width: 80%;
+  }
+}
 .banner-slider {
   width: 100%;
   height: 200px;
@@ -488,19 +493,53 @@ html {
   text-decoration: none;
   color: #666;
 }
+@media screen and (max-width: 768px) {
+  .footer__menu-container a {
+    font-size: 0.5em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer__logo {
+    margin: 60px 0 0;
+  }
+}
 .footer__aside {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .footer__aside {
+    margin-top: 60px;
+    flex-direction: column;
+  }
 }
 .footer__aside-child {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .footer__aside-child {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__aside-child:first-of-type {
+    order: 2;
+  }
+  .footer__aside-child:last-of-type {
+    order: 1;
+  }
+}
 .footer__texto-logo {
   color: #99999999;
   font-size: 0.75em;
   margin-left: 15px;
+}
+@media screen and (max-width: 768px) {
+  .footer__texto-logo {
+    display: none;
+  }
 }
 .footer__btn-mais-informacoes {
   background-color: #f6f6f6;
@@ -515,6 +554,18 @@ html {
 .footer__btn-mais-informacoes img {
   width: 10px;
   margin-right: 5px;
+}
+@media screen and (max-width: 768px) {
+  .footer__btn-mais-informacoes {
+    position: relative;
+    top: -40px;
+  }
+}
+.footer__acessibilidade,
+.footer__grupo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .footer__link-acessibilidade {
   display: inline-block;
@@ -541,10 +592,39 @@ html {
 .footer__redes-sociais {
   border-left: 1px solid rgba(102, 102, 102, 0.452);
   padding-left: 15px;
+  margin-left: 20px;
 }
 .footer__redes-sociais a {
   vertical-align: middle;
   margin-right: 10px;
+}
+.footer__adress {
+  width: 90%;
+  margin: 50px auto 30px;
+  color: #666;
+  font-size: 0.75em;
+  font-style: normal;
+}
+.footer__adress a {
+  color: inherit;
+  text-decoration: none;
+}
+.footer__outros {
+  color: #666;
+  font-size: 0.75em;
+  width: 25%;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__outros a {
+  color: inherit;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .footer__outros {
+    width: 30%;
+  }
 }
 .margin-top-sections {
   margin-top: 50px;
