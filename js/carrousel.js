@@ -2,7 +2,8 @@ const flktyBanner = new Flickity('.banner-slider', {
         // options
         pageDots: true,
         resize: true,
-        contain: true
+        contain: true,
+        setGallerySize: false
 });
 
 
@@ -10,7 +11,10 @@ const flkty = new Flickity('.categorias__carrousel', {
         // options
         pageDots: false,
         resize: true,
-        contain: true
+        contain: true,
+        groupCells: true,
+        groupCells: window.innerWidth <= 1024 ? 4 : 5,
+
 });
 
 const flkty2 = new Flickity('.mais-vendidos__carrousel', {

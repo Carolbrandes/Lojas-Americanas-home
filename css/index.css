@@ -30,6 +30,7 @@ html {
 .title-sections {
   color: #666;
   font-size: 1.62em;
+  margin-bottom: 30px;
 }
 .fonte-grande {
   font-size: 1.62em;
@@ -39,17 +40,22 @@ html {
   vertical-align: middle;
 }
 .produto {
-  width: 18%;
+  width: 16%;
   background-color: #fff;
+  border: 5px solid #EBEBEB;
   padding: 2% 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 30px 0 30px 10px;
 }
-.produto img {
+.produto__img {
   width: 60%;
   margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  .produto__img {
+    width: 70%;
+  }
 }
 .produto__nome {
   width: 90%;
@@ -145,6 +151,14 @@ html {
     text-align: center;
     padding-left: 0;
   }
+}
+.fast-news {
+  width: 100%;
+  height: 60px;
+  background-image: url(../images/fast-news.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 @media screen and (max-width: 1024px) {
   .fast-news {
@@ -282,7 +296,8 @@ html {
   width: 70%;
   height: 55px;
   line-height: 55px;
-  margin: 30px auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   background-color: #e60014;
   -webkit-border-radius: 40px !important;
@@ -296,8 +311,7 @@ html {
 }
 .banner-slider {
   width: 100%;
-  height: 316px ;
-  margin: 30px 0;
+  height: 200px;
 }
 .banner-slider a {
   width: 100%;
@@ -310,24 +324,11 @@ html {
 }
 .cards {
   width: 100%;
-  margin: 30px 0;
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 768px) {
-  .cards {
-    margin: 60px 0;
-  }
-}
 .cards img {
   width: 95%;
-}
-.mais-vendidos,
-.melhores-ofertas,
-.tambem-compraram,
-.lojas-parceiras,
-.produtos-patrocionados {
-  margin: 30px 0;
 }
 .categorias {
   height: 270px;
@@ -337,14 +338,20 @@ html {
     height: 230px;
   }
 }
-.categorias__carrousel {
-  margin: 30px 0;
+.categorias__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #666;
+  font-size: 1.25em;
+  text-decoration: none;
+  text-align: center;
 }
-.categorias__carrousel img {
-  width: 60%;
-}
-.categorias__width90 {
-  width: 90% !important;
+.categorias__img {
+  width: 80%;
+  min-width: 150px;
+  min-height: 150px;
 }
 .oferta-do-dia__container {
   display: flex;
@@ -360,6 +367,9 @@ html {
 .oferta-do-dia__container-cronometro {
   color: #808080;
   font-size: 1.5em;
+}
+.oferta-do-dia__container:last-of-type {
+  margin-top: 30px;
 }
 .oferta-do-dia__cronometro {
   font-size: 1.87em;
@@ -428,10 +438,7 @@ html {
   color: #fff;
   font-size: 0.87em;
 }
-.lojas-parceiras__container {
-  margin: 30px 0;
-}
-.lojas-parceiras__container img {
+.lojas-parceiras__img {
   width: 90%;
 }
 .banners {
@@ -446,6 +453,9 @@ html {
 }
 .banners img {
   width: 100%;
+}
+.flickity-viewport {
+  left: -20px;
 }
 .flickity-prev-next-button {
   top: 30%;
@@ -465,9 +475,6 @@ html {
 .flickity-prev-next-button.previous {
   display: none;
 }
-.footer {
-  margin: 30px 0;
-}
 .footer__menu {
   background-color: #fff;
   padding: 2% 0;
@@ -482,7 +489,6 @@ html {
   color: #666;
 }
 .footer__aside {
-  margin: 30px 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -539,4 +545,7 @@ html {
 .footer__redes-sociais a {
   vertical-align: middle;
   margin-right: 10px;
+}
+.margin-top-sections {
+  margin-top: 50px;
 }

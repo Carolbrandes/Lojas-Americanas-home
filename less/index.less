@@ -6,8 +6,7 @@
 @color06: #808080;
 @color07: #ed003b;
 @color08: #99999999;
-@margin-sections: 30px;
-@margin-sections-tablet: 60px;
+@margin-title: 30px;
 
 
 
@@ -66,6 +65,7 @@ html {
 .title-sections {
         color: @color03;
         font-size: 1.62em;
+        margin-bottom: @margin-title;
 }
 
 .fonte-grande {
@@ -78,17 +78,21 @@ html {
 }
 
 .produto{
-        width: 18%;
+        width: 16%;
         background-color: #fff;
+        border: 5px solid #EBEBEB;
         padding: 2% 0;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        margin: @margin-sections 0 @margin-sections 10px;
-
-        img{
+       
+        &__img{
                 width: 60%;
                 margin: 0 auto;
+
+                @media screen and (max-width:768px) {
+                        width: 70%;
+                 }
         }
 
         @padding-left: 5%;
@@ -195,6 +199,12 @@ html {
 }
 
 .fast-news{
+        width: 100%;
+        height: 60px;
+        background-image: url(../images/fast-news.jpg);
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
         @media screen and (max-width: 1024px) {
                 display: none;
         }
@@ -336,7 +346,8 @@ html {
         width: 70%;
         height: @height;
         line-height: @height;
-        margin: @margin-sections auto;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
         background-color: @color01;
         .border-radius(40px);
@@ -347,9 +358,8 @@ html {
 
 .banner-slider {
         width: 100%;
-        height: 316px ;
-        margin: @margin-sections 0;
-
+        height: 200px;
+       
         a {
                 width: 100%;
                 height: 100%;
@@ -364,22 +374,14 @@ html {
 
 .cards {
         width: 100%;
-        margin: @margin-sections 0;
         display: flex;
         justify-content: space-between;
-
-        @media screen and (max-width:768px) {
-                margin: @margin-sections-tablet 0;
-        }
 
         img {
                 width: 95%;
         }
 }
 
-.mais-vendidos, .melhores-ofertas, .tambem-compraram, .lojas-parceiras, .produtos-patrocionados{
-        margin: @margin-sections 0;
-}
 
 .categorias {
         height: 270px;
@@ -388,19 +390,26 @@ html {
                 height: 230px;
         }
 
-        &__carrousel{
-                margin: @margin-sections 0;
-        
-                img {
-                        width: 60%;
-                }
+       
+        &__container{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                color: @color03;
+                font-size: 1.25em;
+                text-decoration: none;
+                text-align: center;
         }
 
-
-        &__width90 {
-                width: 90% !important;
+        &__img{
+                @diametro: 150px;
+                width: 80%;
+                min-width: @diametro;
+                min-height: @diametro;
         }
 }
+
 
 
 .oferta-do-dia{
@@ -418,6 +427,10 @@ html {
                 &-cronometro{
                       color: @color06;
                       font-size: 1.5em;  
+                }
+
+                &:last-of-type{
+                        margin-top: @margin-title;
                 }
         }
 
@@ -493,12 +506,9 @@ html {
 }
 
 .lojas-parceiras{
-        &__container{
-                margin: @margin-sections 0;
-
-                img{
-                        width: 90%;
-                }
+      
+        &__img{
+                width: 90%;
         }
 }
 
@@ -518,6 +528,9 @@ html {
         }
 }
 
+.flickity-viewport{
+        left: -20px;
+}
 
 .flickity-prev-next-button {
         top: 30%;
@@ -542,8 +555,7 @@ html {
 }
 
 .footer{
-        margin: @margin-sections 0;
-
+        
         &__menu{
                 background-color: #fff;
                 padding: 2% 0;
@@ -561,7 +573,7 @@ html {
         }
 
         &__aside{
-                margin: @margin-sections 0;
+                
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
@@ -626,5 +638,9 @@ html {
                         margin-right: 10px;
                 }
         }
+}
+
+.margin-top-sections{
+        margin-top: 50px;
 }
 
