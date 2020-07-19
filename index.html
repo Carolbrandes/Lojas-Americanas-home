@@ -5,8 +5,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Americanas</title>
-        <!-- CSS -->
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
+        <link rel="stylesheet" href="css/glider.css">
         <link rel="stylesheet" href="css/index.css" />
 </head>
 
@@ -20,16 +20,17 @@
                                 <div class="context header__container">
                                         <img class="header__menu-mobile" src="images/menu-mobile-branco.svg"
                                                 alt="menu" />
-                                        <img src="images/logo.png" alt="logo Americanas" />
+                                        <img class="header__logo" src="images/logo.png" alt="logo Americanas" />
 
-                                        <div>
+                                        <div class="header__busca">
                                                 <input class="header__input" type="text" />
                                                 <button class="header__btn-pesquisar"><img src="images/lupa.png"
                                                                 alt="pesquisar" /></button>
                                         </div>
 
                                         <div class="header__area-login">
-                                                <img src="images/login.png" alt="ícone login" />
+                                                <img class="header__icone-login" src="images/login.png"
+                                                        alt="ícone login" />
                                                 <span>
                                                         Olá, faça seu login <br />
                                                         ou cadastra-se <img
@@ -41,7 +42,8 @@
                                         <div>
                                                 <img class="header__favoritos" src="images/coracao.svg"
                                                         alt="favoritos" />
-                                                <img src="images/carrinho.png" alt="carrinho de compras" />
+                                                <img class="header__carrinho" src="images/carrinho.png"
+                                                        alt="carrinho de compras" />
                                         </div>
                                 </div>
                                 <!--fim header__container-->
@@ -60,6 +62,35 @@
                                         <a href="#"><img class="menu01__logo-a" src="images/logo-a.png" alt="#" />
                                                 <b>oferta do
                                                         dia</b></a>
+                                </nav>
+
+                                <nav class="menu01-mobile">
+                                        <div class="glider-contain">
+                                                <div class="menu-glider">
+                                                        <a href="#">covid-19 - nossos cuidados</a>
+                                                        <a href="#">seja prime <img class="menu01__logo-a"
+                                                                        src="images/logo-a.png" alt="#" /></a>
+                                                        <a href="#"><img class="menu01__logo-a" src="images/logo-a.png"
+                                                                        alt="#" />
+                                                                empresas</a>
+                                                        <a href="#">mercado</a>
+                                                        <a href="#">dia dos pais</a>
+                                                        <a href="#">baixe o app</a>
+                                                        <a href="#">receba hoje</a>
+                                                        <a href="#">produtos importados</a>
+                                                        <a href="#"><img class="menu01__logo-a" src="images/logo-a.png"
+                                                                        alt="#" />
+                                                                <b>oferta do
+                                                                        dia</b></a>
+                                                </div>
+
+                                                <button style="display: none;" aria-label="Previous"
+                                                        class="glider-prev">&lt;</button>
+                                                <button style="display: none;" aria-label="Next"
+                                                        class="glider-next glider-next-fullbanner">&gt;</button>
+
+                                                <div style="display: none;" role="tablist" class="dots" id="dots"></div>
+                                        </div>
                                 </nav>
                         </div> <!-- fim context-->
                 </div><!-- fim div header-->
@@ -95,69 +126,89 @@
                                 <span class="destaque02">baixe agora &gt; </span>
                         </a>
 
-                        <div class="banner-slider margin-top-sections">
-                                <a href="#">
-                                        <img src="images/slider01-banner01.jpg" alt="#" />
-                                </a>
+                        <div class="glider-contain glider-contain-full">
+                                <div class="full-banner margin-top-sections">
+                                        <a href="#">
+                                                <img src="images/slider01-banner01.jpg" alt="#" />
+                                        </a>
 
-                                <a href="#">
-                                        <img src="images/slider01-banner02.jpg" alt="#" />
-                                </a>
+                                        <a href="#">
+                                                <img src="images/slider01-banner02.jpg" alt="#" />
+                                        </a>
 
-                                <a href="#">
-                                        <img src="images/slider01-banner03.jpg" alt="#" />
-                                </a>
+                                        <a href="#">
+                                                <img src="images/slider01-banner03.jpg" alt="#" />
+                                        </a>
 
-                                <a href="#">
-                                        <img src="images/slider01-banner04.jpg" alt="#" />
-                                </a>
+                                        <a href="#">
+                                                <img src="images/slider01-banner04.jpg" alt="#" />
+                                        </a>
+                                </div>
+                                <button style="display: none;" aria-label="Previous" class="glider-prev">&lt;</button>
+                                <button aria-label="Next" class="glider-next glider-next-fullbanner">&gt;</button>
+
+                                <div role="tablist" class="dots" id="dots"></div>
                         </div>
 
-                        <div class="cards margin-top-sections">
-                                <a href="#"><img src="images/saldao_banner3_SFS_jul.jpg" alt="#"></a>
-                                <a href="#"><img src="images/BANNER3-MERCADO.jpg" alt="#"></a>
-                                <a href="#"><img src="images/Banner_home_acom_kit.jpg" alt="#"></a>
+                        <div class="cards-banner margin-top-sections">
+                                <a href="#"><img src="images/saldao_banner3_SFS_jul.jpg" alt="#"/></a>
+                                <a href="#"><img src="images/BANNER3-MERCADO.jpg" alt="#"/></a>
+                                <a href="#"><img src="images/Banner_home_acom_kit.jpg" alt="#"/></a>
                         </div>
 
                         <section class="categorias margin-top-sections">
                                 <h2 class="title-sections">categorias em destaque</h2>
 
-                                <div class="categorias__carrousel">
-                                        <a class="categorias__container" href="#">
-                                                <img class="categorias__img" src="images/categoria-notebook.jpg"
-                                                        alt="#">
-                                                <span>notebooks</span>
-                                        </a>
-                                        <a class="categorias__container" href="#">
-                                                <img class="categorias__img" src="images/categoria-tablet.jpg" alt="#">
-                                                <span>tablets</span>
-                                        </a>
-                                        <a class="categorias__container" href="#">
-                                                <img class="categorias__img" src="images/categoria-celular.jpg" alt="#">
-                                                <span>celulares</span>
-                                        </a>
-                                        <a class="categorias__container" href="#">
-                                                <img class="categorias__img" src="images/categoria-tv.jpg" alt="#">
-                                                <span>TVs</span>
-                                        </a>
-                                        <a class="categorias__container" href="#">
-                                                <img class="categorias__img" src="images/categoria-eletroportatil.jpg"
-                                                        alt="#">
-                                                <span>eletroportáteis</span>
-                                        </a>
-                                        <a class="categorias__container" href="#">
-                                                <img class="categorias__img" src="images/categoria-internacional.jpg"
-                                                        alt="#">
-                                                <span>produtos internacionais</span>
-                                        </a>
-                                        <a class="categorias__container" href="#">
-                                                <img class="categorias__img" src="images/categoria-beleza.jpg" alt="#">
-                                                <span>beleza</span>
-                                        </a>
-                                        <a class="categorias__container" href="#">
-                                                <img class="categorias__img" src="images/categoria-livros.jpg" alt="#">
-                                                <span>livros</span>
-                                        </a>
+                                <div class="glider-contain">
+                                        <div class="categorias-glider">
+                                                <a href="#">
+                                                        <img src="images/categoria-notebook.jpg" alt="#"/>
+                                                        notebooks
+                                                </a>
+                                                <a href="#">
+                                                        <img src="images/categoria-tablet.jpg" alt="#"/>
+                                                        tablets
+                                                </a>
+                                                <a href="#">
+                                                        <img src="images/categoria-celular.jpg" alt="#"/>
+                                                        celulares
+                                                </a>
+                                                <a href="#">
+                                                        <img src="images/categoria-tv.jpg" alt="#"/>
+                                                        TVs
+                                                </a>
+                                                <a href="#">
+                                                        <img src="images/categoria-eletroportatil.jpg" alt="#"/>
+                                                        eletroportáteis
+                                                </a>
+                                                <a href="#">
+                                                        <img src="images/categoria-internacional.jpg" alt="#"/>
+                                                        produtos internacionais
+                                                </a>
+                                                <a href="#">
+                                                        <img src="images/categoria-beleza.jpg" alt="#"/>
+                                                        beleza
+                                                </a>
+                                                <a href="#">
+                                                        <img src="images/categoria-livros.jpg" alt="#"/>
+                                                        livros
+                                                </a>
+                                                <a href="#">
+                                                        <img src="images/categoria-cadeiras.jpg" alt="#"/>
+                                                        cadeiras
+                                                </a>
+                                                <a href="#">
+                                                        <img src="images/categoria-micro-ondas.jpg" alt="#"/>
+                                                        micro-ondas
+                                                </a>
+
+                                        </div>
+
+                                        <button style="display: none;" aria-label="Previous"
+                                                class="glider-prev">&lt;</button>
+                                        <button aria-label="Next" class="glider-next">&gt;</button>
+
+                                        <div role="tablist" class="dots"></div>
                                 </div>
 
                         </section>
@@ -166,120 +217,141 @@
                         <section class="mais-vendidos margin-top-sections">
                                 <h2 class="title-sections">os mais vendidos de hoje</h2>
 
-                                <div class="mais-vendidos__carrousel">
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
+                                <div class="glider-contain">
+                                        <div class="produtos-mais-vendidos">
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
 
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
 
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
+
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
+
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
+
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
+
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
+
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
+
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
+
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
+
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
+
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
+
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
+
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
+
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
+
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
+
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
+
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
                                         </div>
+                                        <button style="display: none;" aria-label="Previous"
+                                                class="glider-prev">&lt;</button>
+                                        <button aria-label="Next"
+                                                class="glider-next glider-next-fullbanner">&gt;</button>
 
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
-
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
-
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
-                                        </div>
-
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
-
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
-
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
-                                        </div>
-
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
-
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
-
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
-                                        </div>
-
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
-
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
-
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
-                                        </div>
-
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
-
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
-
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
-                                        </div>
+                                        <div role="tablist" class="dots"></div>
                                 </div>
                         </section>
 
                         <section class="oferta-do-dia margin-top-sections">
                                 <div class="oferta-do-dia__container">
-                                        <img src="images/oferta-do-dia.jpg" alt="ofertas do dia" />
+                                        <img class="oferta-do-dia__img" src="images/oferta-do-dia.jpg"
+                                                alt="ofertas do dia" />
                                         <div class="oferta-do-dia__container-cronometro">
                                                 <span class="oferta-do-dia__cronometro">06</span>h
                                                 <span class="oferta-do-dia__cronometro">32</span>m
@@ -287,13 +359,14 @@
                                         </div>
                                 </div>
 
+
                                 <div class="oferta-do-dia__container">
                                         <div class="produto produto-oferta">
                                                 <div class="produto-oferta__tag">
                                                         <img src="images/cashback.png" alt="#" />
                                                         30% de cashback
                                                 </div>
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
+                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#"/>
                                                 <p class="produto__nome">
                                                         iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
                                                 </p>
@@ -310,7 +383,7 @@
                                                 <p class="produto__preco">
                                                         R$ 4.599,00
                                                         <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
+                                                                <img src="images/logo-a-branco.png" alt="#"/> prime
                                                         </span>
                                                 </p>
 
@@ -324,7 +397,7 @@
                                                         <img src="images/cashback.png" alt="#" />
                                                         30% de cashback
                                                 </div>
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
+                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#"/>
                                                 <p class="produto__nome">
                                                         iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
                                                 </p>
@@ -341,7 +414,7 @@
                                                 <p class="produto__preco">
                                                         R$ 4.599,00
                                                         <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
+                                                                <img src="images/logo-a-branco.png" alt="#"/> prime
                                                         </span>
                                                 </p>
 
@@ -355,7 +428,7 @@
                                                         <img src="images/cashback.png" alt="#" />
                                                         30% de cashback
                                                 </div>
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
+                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#"/>
                                                 <p class="produto__nome">
                                                         iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
                                                 </p>
@@ -372,7 +445,7 @@
                                                 <p class="produto__preco">
                                                         R$ 4.599,00
                                                         <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
+                                                                <img src="images/logo-a-branco.png" alt="#"/> prime
                                                         </span>
                                                 </p>
 
@@ -386,7 +459,7 @@
                                                         <img src="images/cashback.png" alt="#" />
                                                         30% de cashback
                                                 </div>
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
+                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#"/>
                                                 <p class="produto__nome">
                                                         iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
                                                 </p>
@@ -403,7 +476,7 @@
                                                 <p class="produto__preco">
                                                         R$ 4.599,00
                                                         <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
+                                                                <img src="images/logo-a-branco.png" alt="#"/> prime
                                                         </span>
                                                 </p>
 
@@ -417,338 +490,384 @@
                         <section class="melhores-ofertas margin-top-sections">
                                 <h2 class="title-sections">só as melhores ofertas</h2>
 
-                                <div class="melhores-ofertas__carrousel">
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
+                                <div class="glider-contain">
+                                        <div class="melhores-ofertas-glider">
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
 
-                                                <p class="produto__avaliacao">
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <span class="produto__numero-avaliacoes">0</span>
-                                                </p>
+                                                        <p class="produto__avaliacao">
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <span class="produto__numero-avaliacoes">0</span>
+                                                        </p>
 
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
 
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
+
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
+
+                                                        <p class="produto__avaliacao">
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <span class="produto__numero-avaliacoes">0</span>
+                                                        </p>
+
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
+
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
+
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
+
+                                                        <p class="produto__avaliacao">
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <span class="produto__numero-avaliacoes">0</span>
+                                                        </p>
+
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
+
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
+
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
+
+                                                        <p class="produto__avaliacao">
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <span class="produto__numero-avaliacoes">0</span>
+                                                        </p>
+
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
+
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
+
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
+
+                                                        <p class="produto__avaliacao">
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <span class="produto__numero-avaliacoes">0</span>
+                                                        </p>
+
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
+
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
+
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
+
+                                                        <p class="produto__avaliacao">
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <span class="produto__numero-avaliacoes">0</span>
+                                                        </p>
+
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
+
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
                                         </div>
+                                        <button style="display: none;" aria-label="Previous"
+                                                class="glider-prev">&lt;</button>
+                                        <button aria-label="Next"
+                                                class="glider-next glider-next-fullbanner">&gt;</button>
 
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
-
-                                                <p class="produto__avaliacao">
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <span class="produto__numero-avaliacoes">0</span>
-                                                </p>
-
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
-
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
-                                        </div>
-
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
-
-                                                <p class="produto__avaliacao">
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <span class="produto__numero-avaliacoes">0</span>
-                                                </p>
-
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
-
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
-                                        </div>
-
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
-
-                                                <p class="produto__avaliacao">
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <span class="produto__numero-avaliacoes">0</span>
-                                                </p>
-
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
-
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
-                                        </div>
-
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
-
-                                                <p class="produto__avaliacao">
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <span class="produto__numero-avaliacoes">0</span>
-                                                </p>
-
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
-
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
-                                        </div>
-
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
-
-                                                <p class="produto__avaliacao">
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <span class="produto__numero-avaliacoes">0</span>
-                                                </p>
-
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
-
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
-                                        </div>
-
+                                        <div role="tablist" class="dots"></div>
                                 </div>
+                                <!-- <div class="melhores-ofertas__carrousel">
+                                       
+
+                                </div> -->
                         </section>
 
                         <section class="tambem-compraram margin-top-sections">
                                 <h2 class="title-sections">pessoas com interesses similares também compraram:</h2>
 
-                                <div class="tambem-compraram__carrousel">
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
+                                <div class="glider-contain">
+                                        <div class="tambem-compraram-glider">
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
 
-                                                <p class="produto__avaliacao">
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <span class="produto__numero-avaliacoes">0</span>
-                                                </p>
+                                                        <p class="produto__avaliacao">
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <span class="produto__numero-avaliacoes">0</span>
+                                                        </p>
 
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
 
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
+
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
+
+                                                        <p class="produto__avaliacao">
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <span class="produto__numero-avaliacoes">0</span>
+                                                        </p>
+
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
+
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
+
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
+
+                                                        <p class="produto__avaliacao">
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <span class="produto__numero-avaliacoes">0</span>
+                                                        </p>
+
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
+
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
+
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
+
+                                                        <p class="produto__avaliacao">
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <span class="produto__numero-avaliacoes">0</span>
+                                                        </p>
+
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
+
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
+
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
+
+                                                        <p class="produto__avaliacao">
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <span class="produto__numero-avaliacoes">0</span>
+                                                        </p>
+
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
+
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
+
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
+
+                                                        <p class="produto__avaliacao">
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <span class="produto__numero-avaliacoes">0</span>
+                                                        </p>
+
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
+
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
                                         </div>
 
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
-
-                                                <p class="produto__avaliacao">
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <span class="produto__numero-avaliacoes">0</span>
-                                                </p>
-
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
-
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
-                                        </div>
-
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
-
-                                                <p class="produto__avaliacao">
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <span class="produto__numero-avaliacoes">0</span>
-                                                </p>
-
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
-
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
-                                        </div>
-
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
-
-                                                <p class="produto__avaliacao">
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <span class="produto__numero-avaliacoes">0</span>
-                                                </p>
-
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
-
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
-                                        </div>
-
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
-
-                                                <p class="produto__avaliacao">
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <span class="produto__numero-avaliacoes">0</span>
-                                                </p>
-
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
-
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
-                                        </div>
-
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
-
-                                                <p class="produto__avaliacao">
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <span class="produto__numero-avaliacoes">0</span>
-                                                </p>
-
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
-
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
-                                        </div>
+                                        <button style="display: none;" aria-label="Previous" class="glider-prev">
+                                                &lt;
+                                        </button>
+                                        <button aria-label="Next" class="glider-next">
+                                                &gt;
+                                        </button>
+                                        <div role="tablist" class="dots"></div>
                                 </div>
+
                         </section>
 
                         <form class="newsletter margin-top-sections" action="">
@@ -770,231 +889,271 @@
                         <section class="lojas-parceiras margin-top-sections">
                                 <h2 class="title-sections">lojas parceiras</h2>
 
-                                <div class="lojas-parceiras__container">
-                                        <a href="#">
-                                                <img class="lojas-parceiras__img"
-                                                        src="https://images-americanas.b2w.io/spacey/2020/04/16/Apple-novo.png"
-                                                        alt="#">
-                                        </a>
+                                <div class="glider-contain">
+                                        <div class="lojas-parceiras-glider">
+                                                <a href="#">
+                                                        <img class="lojas-parceiras__img"
+                                                                src="https://images-americanas.b2w.io/spacey/2020/04/16/Apple-novo.png"
+                                                                alt="#"/>
+                                                </a>
 
-                                        <a href="#">
-                                                <img class="lojas-parceiras__img"
-                                                        src="https://images-americanas.b2w.io/spacey/2020/04/16/Apple-novo.png"
-                                                        alt="#">
-                                        </a>
+                                                <a href="#">
+                                                        <img class="lojas-parceiras__img"
+                                                                src="https://images-americanas.b2w.io/spacey/2020/04/16/Apple-novo.png"
+                                                                alt="#"/>
+                                                </a>
 
-                                        <a href="#">
-                                                <img class="lojas-parceiras__img"
-                                                        src="https://images-americanas.b2w.io/spacey/2020/04/16/Apple-novo.png"
-                                                        alt="#">
-                                        </a>
+                                                <a href="#">
+                                                        <img class="lojas-parceiras__img"
+                                                                src="https://images-americanas.b2w.io/spacey/2020/04/16/Apple-novo.png"
+                                                                alt="#"/>
+                                                </a>
 
-                                        <a href="#">
-                                                <img class="lojas-parceiras__img"
-                                                        src="https://images-americanas.b2w.io/spacey/2020/04/16/Apple-novo.png"
-                                                        alt="#">
-                                        </a>
+                                                <a href="#">
+                                                        <img class="lojas-parceiras__img"
+                                                                src="https://images-americanas.b2w.io/spacey/2020/04/16/Apple-novo.png"
+                                                                alt="#"/>
+                                                </a>
 
-                                        <a href="#">
-                                                <img class="lojas-parceiras__img"
-                                                        src="https://images-americanas.b2w.io/spacey/2020/04/16/Apple-novo.png"
-                                                        alt="#">
-                                        </a>
+                                                <a href="#">
+                                                        <img class="lojas-parceiras__img"
+                                                                src="https://images-americanas.b2w.io/spacey/2020/04/16/Apple-novo.png"
+                                                                alt="#"/>
+                                                </a>
 
+                                                <a href="#">
+                                                        <img class="lojas-parceiras__img"
+                                                                src="https://images-americanas.b2w.io/spacey/2020/04/16/Apple-novo.png"
+                                                                alt="#"/>
+                                                </a>
+                                        </div>
+
+                                        <button style="display: none;" aria-label="Previous" class="glider-prev">
+                                                &lt;
+                                        </button>
+                                        <button aria-label="Next" class="glider-next">
+                                                &gt;
+                                        </button>
+                                        <div role="tablist" class="dots"></div>
                                 </div>
+
                         </section>
 
 
                         <div class="banners margin-top-sections">
                                 <a href="#"><img src="https://tpc.googlesyndication.com/simgad/8045151464445309344?"
-                                                alt="#"></a>
+                                                alt="#"/></a>
                                 <a href="#"><img src="https://tpc.googlesyndication.com/simgad/7674040471593548963?"
-                                                alt="#"></a>
+                                                alt="#"/></a>
                                 <a href="#"><img src="https://tpc.googlesyndication.com/simgad/13191916350134972387?"
-                                                alt="#"></a>
+                                                alt="#"/></a>
                                 <a href="#"><img src="https://tpc.googlesyndication.com/simgad/13876855567654130540?"
-                                                alt="#"></a>
+                                                alt="#"/></a>
                         </div>
 
                         <div class="cards margin-top-sections">
                                 <a href="#"><img src="https://images-americanas.b2w.io/spacey/2020/01/15/banner4__jirau.png"
-                                                alt="#"></a>
+                                                alt="#"/></a>
                                 <a href="#"><img src="https://images-americanas.b2w.io/spacey/2020/04/10/apoie_sua_comunidade_-_banner_sazonal.png"
-                                                alt="#"></a>
+                                                alt="#"/></a>
                                 <a href="#"><img src="https://images-americanas.b2w.io/spacey/2020/01/15/banner4__tem-tudo_.png"
-                                                alt="#"></a>
+                                                alt="#"/></a>
                                 <a href="#"><img src="https://images-americanas.b2w.io/spacey/2020/04/06/banner_prime.png"
-                                                alt="#"></a>
+                                                alt="#"/></a>
                         </div>
 
 
                         <section class="produtos-patrocionados margin-top-sections">
                                 <h2 class="title-sections">produtos patrocionados</h2>
 
-                                <div class="produtos-patrocionados__carrousel">
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
+                                <div class="glider-contain">
+                                        <div class="produtos-patrocionados-glider">
 
-                                                <p class="produto__avaliacao">
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <span class="produto__numero-avaliacoes">0</span>
-                                                </p>
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
 
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
+                                                        <p class="produto__avaliacao">
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <span class="produto__numero-avaliacoes">0</span>
+                                                        </p>
 
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
+
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
+
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
+
+                                                        <p class="produto__avaliacao">
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <span class="produto__numero-avaliacoes">0</span>
+                                                        </p>
+
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
+
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
+
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
+
+                                                        <p class="produto__avaliacao">
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <span class="produto__numero-avaliacoes">0</span>
+                                                        </p>
+
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
+
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
+
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
+
+                                                        <p class="produto__avaliacao">
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <span class="produto__numero-avaliacoes">0</span>
+                                                        </p>
+
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
+
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
+
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
+
+                                                        <p class="produto__avaliacao">
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <span class="produto__numero-avaliacoes">0</span>
+                                                        </p>
+
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
+
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
+
+                                                <div class="produto">
+                                                        <img class="produto__img" src="images/maisvendidos-01.jpg"
+                                                                alt="#"/>
+                                                        <p class="produto__nome">
+                                                                iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
+                                                        </p>
+
+                                                        <p class="produto__avaliacao">
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <a href="#">&#10032;</a>
+                                                                <span class="produto__numero-avaliacoes">0</span>
+                                                        </p>
+
+                                                        <p class="produto__preco">
+                                                                R$ 4.599,00
+                                                                <span class="produto__prime">
+                                                                        <img src="images/logo-a-branco.png" alt="#"/>
+                                                                        prime
+                                                                </span>
+                                                        </p>
+
+                                                        <p class="produto__parcelamento">
+                                                                12x de R$ 383,25 sem juros
+                                                        </p>
+                                                </div>
+
                                         </div>
 
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
-
-                                                <p class="produto__avaliacao">
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <span class="produto__numero-avaliacoes">0</span>
-                                                </p>
-
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
-
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
-                                        </div>
-
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
-
-                                                <p class="produto__avaliacao">
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <span class="produto__numero-avaliacoes">0</span>
-                                                </p>
-
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
-
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
-                                        </div>
-
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
-
-                                                <p class="produto__avaliacao">
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <span class="produto__numero-avaliacoes">0</span>
-                                                </p>
-
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
-
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
-                                        </div>
-
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
-
-                                                <p class="produto__avaliacao">
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <span class="produto__numero-avaliacoes">0</span>
-                                                </p>
-
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
-
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
-                                        </div>
-
-                                        <div class="produto">
-                                                <img class="produto__img" src="images/maisvendidos-01.jpg" alt="#">
-                                                <p class="produto__nome">
-                                                        iPhone 11 64GB Preto iOS 4G Câmera 12MP - Apple
-                                                </p>
-
-                                                <p class="produto__avaliacao">
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <a href="#">&#10032;</a>
-                                                        <span class="produto__numero-avaliacoes">0</span>
-                                                </p>
-
-                                                <p class="produto__preco">
-                                                        R$ 4.599,00
-                                                        <span class="produto__prime">
-                                                                <img src="images/logo-a-branco.png" alt="#"> prime
-                                                        </span>
-                                                </p>
-
-                                                <p class="produto__parcelamento">
-                                                        12x de R$ 383,25 sem juros
-                                                </p>
-                                        </div>
-
+                                        <button style="display: none;" aria-label="Previous" class="glider-prev">
+                                                &lt;
+                                        </button>
+                                        <button aria-label="Next" class="glider-next">
+                                                &gt;
+                                        </button>
+                                        <div role="tablist" class="dots"></div>
                                 </div>
+
                         </section>
                 </div>
                 <!--fim context-->
@@ -1019,7 +1178,8 @@
                         <div class="context">
                                 <div class="footer__aside">
                                         <div class="footer__aside-child">
-                                                <img class="footer__logo" src="images/americanas-logo-fundo-claro.png" alt="#" />
+                                                <img class="footer__logo" src="images/americanas-logo-fundo-claro.png"
+                                                        alt="#" />
                                                 <p class="footer__texto-logo">Tudo. A toda hora. Em qualquer lugar</p>
                                         </div>
 
@@ -1039,10 +1199,10 @@
                                                         </div>
 
                                                         <nav class="footer__redes-sociais">
-                                                                <a href="#"><img src="images/youtube.png" alt="#"></a>
-                                                                <a href="#"><img src="images/facebook.PNG" alt="#"></a>
-                                                                <a href="#"><img src="images/instagram.PNG" alt="#"></a>
-                                                                <a href="#"><img src="images/twitter.PNG" alt="#"></a>
+                                                                <a href="#"><img src="images/youtube.png" alt="#"/></a>
+                                                                <a href="#"><img src="images/facebook.PNG" alt="#"/></a>
+                                                                <a href="#"><img src="images/instagram.PNG" alt="#"/></a>
+                                                                <a href="#"><img src="images/twitter.PNG" alt="#"/></a>
                                                         </nav>
                                                 </div>
                                         </div>
@@ -1065,9 +1225,8 @@
                 </div>
         </footer>
 
-        <!-- JavaScript -->
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-        <script src="js/carrousel.js"></script>
+        <script src="js/glider.js"></script>
+        <script src="js/geral.js"></script>
 </body>
 
 </html>

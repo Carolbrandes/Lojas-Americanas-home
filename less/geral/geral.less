@@ -1,0 +1,122 @@
+// VARIAVEIS
+@color01: #e60014;
+@color02: #ffd24b;
+@color03: #666;
+@color04: #c36c73;
+@color05: #333;
+@color06: #808080;
+@color07: #ed003b;
+@color08: #99999999;
+@margin-title: 30px;
+@font-family: Helvetica, Arial, sans-serif;
+
+
+// FUNÇÕES
+.box-shadow(@valor1: -1px, @valor2: 6px, @valor3: 3px, @valor4: -3px, @cor: rgba(214, 214, 214, 1)) {
+        -webkit-box-shadow: -1px 6px 3px -3px rgba(214, 214, 214, 1);
+        -moz-box-shadow: -1px 6px 3px -3px rgba(214, 214, 214, 1);
+        -o-box-shadow: -1px 6px 3px -3px rgba(214, 214, 214, 1);
+        -ms-box-shadow: -1px 6px 3px -3px rgba(214, 214, 214, 1);
+        box-shadow: -1px 6px 3px -3px rgba(214, 214, 214, 1);
+}
+
+.border-radius(@radio) {
+        -webkit-border-radius: @radio  !important;
+        -moz-border-radius: @radio  !important;
+        -o-border-radius: @radio  !important;
+        -ms-border-radius: @radio  !important;
+        border-radius: @radio  !important;
+}
+
+.estiloControlesCarrousel() {
+        @diametro: 90px;
+        display: block;
+        width: @diametro;
+        height: @diametro;
+        .border-radius(50%);
+        background-color: #fff;
+        color: #8f5454;
+        font-size: 4em;
+        .box-shadow(@valor1: 2px, @valor2: 7px, @valor3: 26px, @valor4: 1px, @cor: rgba(148, 148, 148, 1));
+        top: 20%;
+}
+
+
+// estilos gerais
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body,
+html {
+        font-size: 1rem;
+        font-family: @font-family;
+        background-color: #EBEBEB;
+}
+
+.context {
+        width: 90%;
+        margin: 0 auto;
+
+        @media screen and (max-width:1024px) {
+                width: 98%;
+        }
+}
+
+.seta-exibir {
+        width: 10px;
+}
+
+.destaque {
+        color: @color01  !important;
+}
+
+.destaque02 {
+        color: @color02;
+}
+
+.title-sections {
+        color: @color03;
+        font-size: 1.62em;
+        margin-bottom: @margin-title;
+}
+
+.margin-top-sections {
+        margin-top: 50px;
+}
+
+
+.glider-prev {
+        .estiloControlesCarrousel();
+        left: -40px;
+
+        &:hover {
+                background-color: @color01;
+                color: #fff;
+        }
+}
+
+.glider-next {
+        .estiloControlesCarrousel();
+        left: 96%;
+
+        &:hover {
+                background-color: @color01;
+                color: #fff;
+        }
+}
+
+.glider-next-fullbanner {
+        top: 30%;
+}
+
+.lojas-parceiras .glider-slide img {
+        max-width: 90%;
+}
+
+.glider-contain-full{
+        background-color: #fff;
+        height: 100px;
+}

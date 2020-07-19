@@ -1,0 +1,66 @@
+.newsletter{
+        background-color: @color01;
+        color: #fff;
+        padding: 1% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (max-width:414px) {
+                padding: 5% 0;
+        }
+
+        &__container{
+                width: 60%;
+
+                @media screen and (max-width:768px) {
+                        width: 80%;
+                }
+        }
+
+        &__container-input{
+                margin: 10px 0;
+        }
+
+        &__input{
+             width: 462px;
+             height: 45px;
+             color: @color03;
+
+                @media screen and (max-width: 1024px) {
+                       width: 430px;
+                       margin-right: 10px;
+                }
+
+                @media screen and (max-width:414px) {
+                        display: block;
+                        width: 300px;
+                }
+        }
+
+        &__btn{
+                display: inline-block;
+                background-color: #fff;
+                color: @color01;
+                width: 150px;
+                height: 42px;
+                line-height: 42px;
+                border: none;
+                outline: none;
+
+                @media screen and (max-width:414px) {
+                        display: block;
+                        margin: 5px auto;
+                }
+        }
+
+        &__politica-privacidade{
+                color: #fff;
+                font-size: .87em;
+
+                @media screen and (max-width:414px) {
+                      position: relative;
+                      left: 70px;
+                }
+        }
+}

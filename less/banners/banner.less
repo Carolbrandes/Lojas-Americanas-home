@@ -1,0 +1,23 @@
+.banners{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media screen and (max-width:414px) {
+                justify-content: center;
+         }
+
+        a{
+                display: inline-block;
+                width: 49.5%;
+                margin-bottom: 10px;
+
+                @media screen and (max-width:414px) {
+                       width: 100%;
+                }
+        }
+
+        img{
+                width: 100%;
+        }
+}
