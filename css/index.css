@@ -13,11 +13,16 @@ html {
   width: 90%;
   margin: 0 auto;
 }
+@media screen and (max-width: 1024px) {
+  .context {
+    width: 98%;
+  }
+}
 .seta-exibir {
   width: 10px;
 }
 .destaque {
-  color: #e60014;
+  color: #e60014 !important;
 }
 .destaque02 {
   color: #ffd24b;
@@ -97,6 +102,11 @@ html {
   width: 20%;
   position: relative;
 }
+@media screen and (max-width: 1024px) {
+  .produto-oferta {
+    width: 100%;
+  }
+}
 .produto-oferta__tag {
   width: 100%;
   color: #fff;
@@ -114,7 +124,32 @@ html {
 }
 .produto-oferta .produto__img {
   position: relative;
-  top: 20px;
+  top: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .produto-oferta .produto__img {
+    width: 25% ;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .produto-oferta .produto__nome {
+    text-align: center;
+    position: relative;
+    top: 25px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .produto-oferta .produto__avaliacao,
+  .produto-oferta .produto__preco,
+  .produto-oferta .produto__parcelamento {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fast-news {
+    display: none;
+  }
 }
 .header {
   background-color: #e60014;
@@ -125,12 +160,28 @@ html {
   justify-content: space-around;
   align-items: center;
 }
+.header__menu-mobile {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .header__menu-mobile {
+    display: block;
+    width: 35px;
+  }
+}
 .header__input {
   width: 500px;
   height: 45px;
   color: #666;
   border: none;
   outline: none;
+}
+@media screen and (max-width: 1024px) {
+  .header__input {
+    width: 480px;
+    position: relative;
+    left: 40px;
+  }
 }
 .header__btn-pesquisar {
   background-color: transparent;
@@ -143,6 +194,11 @@ html {
   display: flex;
   align-items: center;
   color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .header__area-login span {
+    display: none;
+  }
 }
 .header__login-seta-exibir {
   display: inline-block;
@@ -160,6 +216,11 @@ html {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 1024px) {
+  .menu01 {
+    width: 100%;
+  }
+}
 .menu01 a {
   color: #fff;
   text-decoration: none;
@@ -176,6 +237,11 @@ html {
   -o-box-shadow: -1px 6px 3px -3px #d6d6d6;
   -ms-box-shadow: -1px 6px 3px -3px #d6d6d6;
   box-shadow: -1px 6px 3px -3px #d6d6d6;
+}
+@media screen and (max-width: 1024px) {
+  .menu02 {
+    display: none;
+  }
 }
 .menu02__container {
   display: flex;
@@ -255,6 +321,12 @@ html {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 1024px) {
+  .oferta-do-dia__container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .oferta-do-dia__container-cronometro {
   color: #808080;
   font-size: 1.5em;
@@ -274,6 +346,14 @@ html {
   border: 5px solid #c2c2c2;
   text-align: center;
 }
+@media screen and (max-width: 1024px) {
+  .oferta-do-dia__cronometro {
+    font-size: 1em;
+    width: 60px;
+    height: 60px;
+    line-height: 50px;
+  }
+}
 .newsletter {
   background-color: #e60014;
   color: #fff;
@@ -292,6 +372,12 @@ html {
   width: 462px;
   height: 45px;
   color: #666;
+}
+@media screen and (max-width: 1024px) {
+  .newsletter__input {
+    width: 430px;
+    margin-right: 10px;
+  }
 }
 .newsletter__btn {
   display: inline-block;

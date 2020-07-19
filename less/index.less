@@ -41,6 +41,10 @@ html {
 .context {
         width: 90%;
         margin: 0 auto;
+
+        @media screen and (max-width:1024px) {
+                width: 98%;
+        }
 }
 
 .seta-exibir {
@@ -48,7 +52,7 @@ html {
 }
 
 .destaque {
-        color: @color01;
+        color: @color01 !important;
 }
 
 .destaque02 {
@@ -140,7 +144,10 @@ html {
         width: 20%;
         position: relative;
 
-        
+        @media screen and (max-width:1024px) {
+                width: 100%;
+        }
+
         &__tag{
                 width: 100%;
                 color: #fff;
@@ -160,10 +167,34 @@ html {
 
         .produto__img{
                 position: relative;
-                top: 20px;
+                top: 50px;
+
+                @media screen and (max-width: 1024px) {
+                       width: 25% ;
+                }
+        }
+
+        .produto__nome{
+                @media screen and (max-width: 1024px) {
+                        text-align: center;
+                        position: relative;
+                        top: 25px;
+                 }
+        }
+
+        .produto__avaliacao, .produto__preco, .produto__parcelamento{
+                @media screen and (max-width: 1024px) {
+                        text-align: center;
+                        padding-left: 0;
+                 }
         }
 }
 
+.fast-news{
+        @media screen and (max-width: 1024px) {
+                display: none;
+        }
+}
 
 .header {
         background-color: @color01;
@@ -175,12 +206,27 @@ html {
                 align-items: center;
         }
 
+        &__menu-mobile{
+                display: none;
+
+                @media screen and (max-width:1024px) {
+                        display: block;
+                        width: 35px;
+                }
+        }
+
         &__input {
                 width: 500px;
                 height: 45px;
                 color: #666;
                 border: none;
                 outline: none;
+
+                @media screen and (max-width:1024px) {
+                        width: 480px;
+                        position: relative;
+                        left: 40px;
+                }
         }
 
         &__btn-pesquisar {
@@ -195,6 +241,12 @@ html {
                 display: flex;
                 align-items: center;
                 color: #fff;
+
+                span{
+                        @media screen and (max-width: 1024px) {
+                                display: none;
+                        }
+                }
         }
 
         &__login-seta-exibir {
@@ -216,6 +268,10 @@ html {
         justify-content: space-between;
         align-items: center;
 
+        @media screen and (max-width:1024px) {
+                width: 100%;
+        }
+
         a {
                 color: #fff;
                 text-decoration: none;
@@ -231,6 +287,10 @@ html {
         background-color: #fff;
         padding: 1% 0;
         .box-shadow();
+
+        @media screen and (max-width: 1024px) {
+                display: none;
+        }
 
         &__container {
                 display: flex;
@@ -321,6 +381,11 @@ html {
                 justify-content: space-between;
                 align-items: center;
 
+                @media screen and (max-width: 1024px) {
+                        flex-direction: column;
+                        justify-content: center;
+                }
+
                 &-cronometro{
                       color: @color06;
                       font-size: 1.5em;  
@@ -338,6 +403,14 @@ html {
                 margin-right: 5px; 
                 border: 5px solid #c2c2c2;
                 text-align: center;
+
+                @media screen and (max-width: 1024px) {
+                        @tamanho: 60px;
+                        font-size: 1em;
+                        width: @tamanho;
+                        height: @tamanho;
+                        line-height: 50px;
+                }
         }
 }
 
@@ -360,7 +433,12 @@ html {
         &__input{
              width: 462px;
              height: 45px;
-             color: @color03;   
+             color: @color03;
+
+                @media screen and (max-width: 1024px) {
+                       width: 430px;
+                       margin-right: 10px;
+                }
         }
 
         &__btn{
@@ -515,3 +593,4 @@ html {
                 }
         }
 }
+
