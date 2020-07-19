@@ -169,6 +169,11 @@ html {
     width: 35px;
   }
 }
+@media screen and (max-width: 768px) {
+  .header__menu-mobile {
+    width: 20px;
+  }
+}
 .header__input {
   width: 500px;
   height: 45px;
@@ -183,12 +188,22 @@ html {
     left: 40px;
   }
 }
+@media screen and (max-width: 768px) {
+  .header__input {
+    width: 300px;
+  }
+}
 .header__btn-pesquisar {
   background-color: transparent;
   border: none;
   vertical-align: middle;
   position: relative;
   left: -50px;
+}
+@media screen and (max-width: 768px) {
+  .header__btn-pesquisar {
+    left: -5px;
+  }
 }
 .header__area-login {
   display: flex;
@@ -225,6 +240,11 @@ html {
   color: #fff;
   text-decoration: none;
   font-size: 0.875em;
+}
+@media screen and (max-width: 1024px) {
+  .menu01 a {
+    font-size: 0.5em;
+  }
 }
 .menu01__logo-a {
   vertical-align: middle;
@@ -294,11 +314,28 @@ html {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 768px) {
+  .cards {
+    margin: 60px 0;
+  }
+}
 .cards img {
   width: 95%;
 }
+.mais-vendidos,
+.melhores-ofertas,
+.tambem-compraram,
+.lojas-parceiras,
+.produtos-patrocionados {
+  margin: 30px 0;
+}
 .categorias {
   height: 270px;
+}
+@media screen and (max-width: 768px) {
+  .categorias {
+    height: 230px;
+  }
 }
 .categorias__carrousel {
   margin: 30px 0;
@@ -308,13 +345,6 @@ html {
 }
 .categorias__width90 {
   width: 90% !important;
-}
-.mais-vendidos,
-.melhores-ofertas,
-.tambem-compraram,
-.lojas-parceiras,
-.produtos-patrocionados {
-  margin: 30px 0;
 }
 .oferta-do-dia__container {
   display: flex;
@@ -364,6 +394,11 @@ html {
 }
 .newsletter__container {
   width: 60%;
+}
+@media screen and (max-width: 768px) {
+  .newsletter__container {
+    width: 80%;
+  }
 }
 .newsletter__container-input {
   margin: 10px 0;

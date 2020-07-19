@@ -7,6 +7,10 @@
 @color07: #ed003b;
 @color08: #99999999;
 @margin-sections: 30px;
+@margin-sections-tablet: 60px;
+
+
+
 @font-family: Helvetica, Arial, sans-serif;
 
 .box-shadow() {
@@ -213,6 +217,10 @@ html {
                         display: block;
                         width: 35px;
                 }
+
+                @media screen and (max-width:768px) {
+                        width: 20px;
+                }
         }
 
         &__input {
@@ -227,6 +235,10 @@ html {
                         position: relative;
                         left: 40px;
                 }
+
+                @media screen and (max-width:768px) {
+                        width: 300px;
+                }
         }
 
         &__btn-pesquisar {
@@ -235,6 +247,10 @@ html {
                 vertical-align: middle;
                 position: relative;
                 left: -50px;
+
+                @media screen and (max-width:768px) {
+                        left: -5px;
+                }
         }
 
         &__area-login {
@@ -276,6 +292,10 @@ html {
                 color: #fff;
                 text-decoration: none;
                 font-size: .875em;
+
+                @media screen and (max-width:1024px) {
+                        font-size: .5em;
+                }
         }
 
         &__logo-a {
@@ -348,14 +368,25 @@ html {
         display: flex;
         justify-content: space-between;
 
+        @media screen and (max-width:768px) {
+                margin: @margin-sections-tablet 0;
+        }
 
         img {
                 width: 95%;
         }
 }
 
+.mais-vendidos, .melhores-ofertas, .tambem-compraram, .lojas-parceiras, .produtos-patrocionados{
+        margin: @margin-sections 0;
+}
+
 .categorias {
         height: 270px;
+
+        @media screen and (max-width:768px) {
+                height: 230px;
+        }
 
         &__carrousel{
                 margin: @margin-sections 0;
@@ -365,14 +396,12 @@ html {
                 }
         }
 
+
         &__width90 {
                 width: 90% !important;
         }
 }
 
-.mais-vendidos, .melhores-ofertas, .tambem-compraram, .lojas-parceiras, .produtos-patrocionados{
-        margin: @margin-sections 0;
-}
 
 .oferta-do-dia{
 
@@ -414,6 +443,7 @@ html {
         }
 }
 
+
 .newsletter{
         background-color: @color01;
         color: #fff;
@@ -424,6 +454,10 @@ html {
 
         &__container{
                 width: 60%;
+
+                @media screen and (max-width:768px) {
+                        width: 80%;
+                }
         }
 
         &__container-input{
