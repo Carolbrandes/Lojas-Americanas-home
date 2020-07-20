@@ -2,8 +2,10 @@ window.addEventListener('load', function () {
 
                 new Glider(document.querySelector('.full-banner'), {
                         slidesToShow: 1,
-                        dots: '#dots',
+                        slidesToScroll: 5,
                         draggable: true,
+                        dots: '#dots',
+                        rewind: true,
                         arrows: {
                                 prev: '.glider-prev',
                                 next: '.glider-next'

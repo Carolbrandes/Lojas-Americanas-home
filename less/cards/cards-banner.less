@@ -2,16 +2,24 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        margin-top: 250px;
+
+        @media screen and(min-width:1400px){
+               margin-top: 400px;
+        }
 
         @media screen and (max-width:768px) {
                 flex-wrap: wrap;
                 justify-content: center;
         }
 
+        @media screen and (max-width:414px) {
+                margin-top: 100px;
+        }
+
         a{
                 display: block;
         }
-
 
         img {
                 width: 90%;

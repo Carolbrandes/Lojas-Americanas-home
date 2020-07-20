@@ -35,7 +35,7 @@
         height: @diametro;
         .border-radius(50%);
         background-color: #fff;
-        color: #8f5454;
+        color: #c08b8b;
         font-size: 4em;
         .box-shadow(@valor1: 2px, @valor2: 7px, @valor3: 26px, @valor4: 1px, @cor: rgba(148, 148, 148, 1));
         top: 20%;
@@ -88,13 +88,27 @@ html {
 }
 
 
+
 .glider-prev {
         .estiloControlesCarrousel();
         left: -40px;
+        top: 70%;
 
         &:hover {
                 background-color: @color01;
                 color: #fff;
+        }
+
+        @media screen and(min-width:1400px){
+                top: 150%;
+        }
+
+        @media screen and (max-width: 768px) {
+                top: 50%;
+        }
+
+        @media screen and (max-width: 414px) {
+                top: 0;
         }
 }
 
@@ -106,10 +120,26 @@ html {
                 background-color: @color01;
                 color: #fff;
         }
+
+        @media screen and (max-width: 768px) {
+                left: 90%;
+        }
 }
 
 .glider-next-fullbanner {
-        top: 30%;
+        top: 70%;
+
+        @media screen and(min-width:1400px){
+                top: 150%;
+        }
+
+        @media screen and (max-width: 768px) {
+                top: 50%;
+        }
+
+        @media screen and (max-width: 414px) {
+                top: 0;
+        }
 }
 
 .lojas-parceiras .glider-slide img {

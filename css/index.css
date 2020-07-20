@@ -45,7 +45,7 @@ html {
   -ms-border-radius: 50% !important;
   border-radius: 50% !important;
   background-color: #fff;
-  color: #8f5454;
+  color: #c08b8b;
   font-size: 4em;
   -webkit-box-shadow: -1px 6px 3px -3px #d6d6d6;
   -moz-box-shadow: -1px 6px 3px -3px #d6d6d6;
@@ -54,10 +54,26 @@ html {
   box-shadow: -1px 6px 3px -3px #d6d6d6;
   top: 20%;
   left: -40px;
+  top: 70%;
 }
 .glider-prev:hover {
   background-color: #e60014;
   color: #fff;
+}
+@media screen and (min-width: 1400px) {
+  .glider-prev {
+    top: 150%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .glider-prev {
+    top: 50%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .glider-prev {
+    top: 0;
+  }
 }
 .glider-next {
   display: block;
@@ -69,7 +85,7 @@ html {
   -ms-border-radius: 50% !important;
   border-radius: 50% !important;
   background-color: #fff;
-  color: #8f5454;
+  color: #c08b8b;
   font-size: 4em;
   -webkit-box-shadow: -1px 6px 3px -3px #d6d6d6;
   -moz-box-shadow: -1px 6px 3px -3px #d6d6d6;
@@ -83,8 +99,28 @@ html {
   background-color: #e60014;
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .glider-next {
+    left: 90%;
+  }
+}
 .glider-next-fullbanner {
-  top: 30%;
+  top: 70%;
+}
+@media screen and (min-width: 1400px) {
+  .glider-next-fullbanner {
+    top: 150%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .glider-next-fullbanner {
+    top: 50%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .glider-next-fullbanner {
+    top: 0;
+  }
 }
 .lojas-parceiras .glider-slide img {
   max-width: 90%;
@@ -158,6 +194,7 @@ html {
   color: #666;
   border: none;
   outline: none;
+  padding-left: 15px;
 }
 @media screen and (max-width: 1024px) {
   .header__input {
@@ -292,6 +329,32 @@ html {
   width: 20px;
   vertical-align: middle;
 }
+.conteudo-oculto-menu {
+  display: none;
+  position: absolute;
+  left: 55px;
+  top: 38.1%;
+  width: 16%;
+  z-index: 100000;
+  background-color: #fff;
+  border: 1px solid rgba(179, 178, 178, 0.514);
+}
+.conteudo-oculto-menu a {
+  display: inline-block;
+  text-decoration: none;
+  color: #666;
+  padding: 2% 4%;
+  margin-bottom: 2px;
+  width: 100%;
+}
+.conteudo-oculto-menu .todos-departamentos {
+  font-weight: bold;
+  color: #3b3b3b;
+  border-top: 1px solid rgba(102, 102, 102, 0.342);
+}
+#menu-departamento:hover .conteudo-oculto-menu {
+  display: block !important;
+}
 .botao-frete-gratis {
   display: block;
   width: 70%;
@@ -330,7 +393,17 @@ html {
 }
 .full-banner {
   width: 100%;
-  height: 250px;
+  height: 280px;
+}
+@media screen and (min-width: 1400px) {
+  .full-banner {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .full-banner {
+    height: 200px;
+  }
 }
 @media screen and (max-width: 414px) {
   .full-banner {
@@ -350,11 +423,22 @@ html {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-top: 250px;
+}
+@media screen and (min-width: 1400px) {
+  .cards-banner {
+    margin-top: 400px;
+  }
 }
 @media screen and (max-width: 768px) {
   .cards-banner {
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 414px) {
+  .cards-banner {
+    margin-top: 100px;
   }
 }
 .cards-banner a {
@@ -612,6 +696,7 @@ html {
   width: 462px;
   height: 45px;
   color: #666;
+  padding-left: 15px;
 }
 @media screen and (max-width: 1024px) {
   .newsletter__input {
