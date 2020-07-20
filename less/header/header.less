@@ -33,8 +33,10 @@
 
         &__menu-mobile{
                 display: none;
+                cursor: pointer;
+               
 
-                @media screen and (max-width:1024px) {
+                @media screen and (max-width:1200px) {
                         display: block;
                         width: 35px;
                 }
@@ -69,7 +71,7 @@
                 outline: none;
                 padding-left: 15px;
 
-                @media screen and (max-width:1024px) {
+                @media screen and (max-width:1200px) {
                         width: 480px;
                         position: relative;
                         left: 40px;
@@ -86,6 +88,7 @@
                 vertical-align: middle;
                 position: relative;
                 left: -50px;
+                cursor: pointer;
 
                 @media screen and (max-width:768px) {
                         left: -5px;
@@ -139,7 +142,7 @@
         justify-content: space-between;
         align-items: center;
 
-        @media screen and (max-width:1024px) {
+        @media screen and (max-width:1200px) {
                 width: 100%;
         }
 
@@ -152,7 +155,7 @@
                 text-decoration: none;
                 font-size: .875em;
 
-                @media screen and (max-width:1024px) {
+                @media screen and (max-width:1200px) {
                         font-size: .5em;
                 }
         }
@@ -173,9 +176,15 @@
                 overflow: hidden;
 
                 a{
+                        display: inline-block;
                         color: #fff;
                         text-decoration: none;
                         font-size: .6em;
+                        background-color: @color01;
+
+                        &:hover{
+                                background-color: #4e080e;                                
+                        }
                 }
         }
 }
@@ -202,6 +211,12 @@
                 }
         }
 
+        &__link-departamento{
+                &:hover  .conteudo-oculto-menu{
+                        display: block;
+                }
+        }
+
         &__menu-departamento {
                 width: 20px;
                 vertical-align: middle;
@@ -213,7 +228,7 @@
         position: absolute;
         left: 55px;
         top: 38.1%;
-        width: 16%;
+        width: 18%;
         z-index: 100000;
         background-color: #fff;
         border: 1px solid rgba(179, 178, 178, 0.514);
@@ -234,9 +249,7 @@
         }
 }
 
-#menu-departamento:hover  .conteudo-oculto-menu{
-        display: block !important;
-}
+
 
 
 
